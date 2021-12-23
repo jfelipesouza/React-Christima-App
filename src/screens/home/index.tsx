@@ -1,6 +1,7 @@
 import React from 'react';
 import CelebrateSection from '../../components/celebratesection';
 import ContactSection from '../../components/contactSection';
+import Footer from '../../components/footer';
 import GiftSection from '../../components/giftsection';
 import Header from '../../components/header';
 import HeroSection from '../../components/herosection';
@@ -18,6 +19,7 @@ const App:React.FC = ()=>{
         <NewSection id ={'new'}/>
         <ContactSection id={'contact'}/>
       </main>
+      <Footer/>
     </>
   )
 }

@@ -49,15 +49,25 @@ export const ContactMessage = styled.textarea`
   background-color: ${({theme})=>theme.colors.background};
   text-transform: initial;
 `;
+
 export const ContactButton = styled.div`
   margin-top: 1.5rem;
   background-color: ${({theme})=>theme.colors.buttonColor};
+  font-size: ${({theme})=>theme.sizes.h3};
   color:#fff;
   width: 80%;
-  border-radius: 1rem;
+  border-radius: 3rem;
   padding: 1rem 0;
   text-align: center;
   cursor: pointer;
+  user-select: none;
+
+  transition: all 0.2s linear;
+
+
+  &:hover{
+    background-color: ${({theme})=>theme.colors.redAlt};
+  }
 `
 
 export const RigthContainer = styled.div`

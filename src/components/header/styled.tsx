@@ -56,12 +56,19 @@ export const Links = styled.a`
 
 export const IconContainer = styled.div`
   font-size: ${({theme})=>theme.sizes.h2};
-  color: #fff;
+  color: ${({theme})=>theme.colors.titleColor};
   cursor: pointer;
-  background-color: ${({theme})=>theme.colors.redAlt};
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  border-radius: 5rem;
+  border-radius: 0rem;
+  transition: all 0.5s linear;
+  
+  &:hover{
+    background-color: ${({theme})=>theme.colors.redAlt};
+    border-radius: 5rem;
+    
+  }
+
 `;
