@@ -46,6 +46,8 @@ export const Links = styled.a`
   color:${({theme})=>theme.colors.titleColor};
   font-size:${({theme})=>theme.sizes.normal};
   font-weight: ${({theme})=>theme.fontWeight.semiBold};
+  user-select: none;
+
   &:hover{
     color:${({theme})=>theme.colors.red};
   }
