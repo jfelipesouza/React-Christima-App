@@ -10,7 +10,7 @@ export const NewSectionContainer = styled.section`
 `;
 
 export const NewSectionTitle = styled.h1`
-  font-size: ${({ theme }) => theme.sizes.big};
+  font-size: ${({ theme }) => theme.sizes.h1};
   font-weight: ${({ theme }) => theme.fontWeight.semiBold};
   color: ${({ theme }) => theme.colors.titleColor};
   margin: 2.5rem 0 1.5rem 0;

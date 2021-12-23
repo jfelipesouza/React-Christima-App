@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import {FaRegSun,FaMoon} from 'react-icons/fa'
+import { FaRegSun, FaMoon } from "react-icons/fa";
 import { Context } from "../../services/context";
 import {
   Container,
@@ -9,26 +9,27 @@ import {
   LinksItem,
   Links,
   Logo,
-  IconContainer
+  IconContainer,
 } from "./styled";
 
 const Header: React.FC = () => {
-
-  const {isDark,setDark} = useContext(Context);
+  const { isDark, setDark } = useContext(Context);
 
   return (
     <Container>
       <HeaderNavbar>
+
         <LogoContainer>
           <Logo>Happy Christimas</Logo>
         </LogoContainer>
+
         <HeaderLinks>
           <LinksItem>
             <Links href="#home">Home</Links>
           </LinksItem>
 
           <LinksItem>
-            <Links href="#celebrate">Celebre</Links>
+            <Links href="#celebrate">Comemore</Links>
           </LinksItem>
 
           <LinksItem>
@@ -38,17 +39,16 @@ const Header: React.FC = () => {
           <LinksItem>
             <Links href="#new">Novo</Links>
           </LinksItem>
+
+          <LinksItem>
+            <Links href="#contact">Mande Mensagens</Links>
+          </LinksItem>
         </HeaderLinks>
-      
-       
-        <IconContainer onClick={()=>setDark(!isDark)} >
-          {
-            isDark
-            ?<FaRegSun/>
-            :<FaMoon/>
-          }
-          
+
+        <IconContainer onClick={() => setDark(!isDark)}>
+          {isDark ? <FaRegSun /> : <FaMoon />}
         </IconContainer>
+        
       </HeaderNavbar>
     </Container>
   );

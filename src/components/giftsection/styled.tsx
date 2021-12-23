@@ -11,7 +11,7 @@ export const GiftSectionContainer = styled.section`
 
 `;
 export const GiftSectionTitle = styled.h1`
-  font-size:${({theme})=>theme.sizes.big};
+  font-size:${({theme})=>theme.sizes.h1};
   color:${({theme})=>theme.colors.titleColor};
   margin-top: 1rem;
   margin-bottom: 2rem;

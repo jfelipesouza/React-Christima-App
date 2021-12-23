@@ -26,11 +26,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
 
   body::-webkit-scrollbar-track {
-    background: ${({theme})=>theme.colors.containerBackground};
+    background: ${({theme})=>theme.colors.background};
   }
 
   body::-webkit-scrollbar-thumb {
@@ -49,6 +49,10 @@ const GlobalStyle = createGlobalStyle`
   h1,h2,h3,h4,h5,h6{
 
     transition: color 0.2s linear;
+  }
+
+  img{
+    user-select: none;
   }
 
 `;

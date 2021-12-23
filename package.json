@@ -2,6 +2,12 @@
   "name": "natal",
   "version": "0.1.0",
   "private": true,
+  "description": "Landing page natalina",
+  "author": {
+    "name": "Felipe Souza",
+    "email": "j.felipe.dev.18@outlook.com",
+    "url": "https://www.jfelipesouza.netlify.com"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",

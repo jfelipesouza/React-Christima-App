@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const GiftCardContainer = styled.div`
   display: flex;
-  width: 200px;
+  width: 180px;
   padding: 2rem 0;
   align-items: center;
   justify-content: center;
@@ -25,7 +25,7 @@ export const GiftCardContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 6rem;
+  width: 5rem;
   height: auto;
   margin-bottom: 0.5rem;
   transition: all 0.4s linear;
@@ -39,14 +39,14 @@ export const Image = styled.img`
 `;
 
 export const GiftPrice = styled.h3`
-  font-size:${({theme})=>theme.sizes.h3};
+  font-size:${({theme})=>theme.sizes.normal};
   color:${({theme})=>theme.colors.titleColor};
   font-weight:${({theme})=>theme.fontWeight.semiBold};
   margin: 0.5rem 0;
 `;
 
 export const GiftCardDescrition = styled.p`
-  font-size:${({theme})=>theme.sizes.normal};
+  font-size:${({theme})=>theme.sizes.small};
   color:${({theme})=>theme.colors.textColor};
   font-weight:${({theme})=>theme.fontWeight.semiBold};
 
