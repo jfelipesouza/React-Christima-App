@@ -18,7 +18,7 @@ Com o intuito de passar uma boa mensagem durante essa época de festas o site po
 
 ## Veja em produção
 
-Acesse o site https://reactechristimas.netlify.app/ e curta o natal!
+Acesse o site https://reactchristmas.netlify.app/ e curta o natal!
 
 ## Sinta-se livre para editar o projeto
 
