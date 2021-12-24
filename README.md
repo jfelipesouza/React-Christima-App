@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# React Christimas App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma landing page feita para treinar React, typescript, styled-components e comemorar o feriado.
 
-## Available Scripts
+## Descrição
 
-In the project directory, you can run:
+Com o intuito de passar uma boa mensagem durante essa época de festas o site possui 5 sections que transmitem mensagens acolhedoras e permitem interações com usuario.
 
-### `yarn start`
+- Home: Sessão inicial aque aparece assim que entra no site;
+- Celebrate: Uma sessão voltada a te encorajar a comemorar;
+- Gifts: Uma sessão que simula a montagem de lista de presentes;
+- New: Sessão que mostra os ultimos itens que entraram no estoque para escolher um presente;
+- Contact: Sessão para escrever uma carta para um ente querido ( ou se for muito jovem para o papai noel);
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## UI Inspiração
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![](./src/assets/img/ui.png)
 
-### `yarn test`
+## Veja em produção
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Acesse o site https://reactechristimas.netlify.app/ e curta o natal!
 
-### `yarn build`
+## Sinta-se livre para editar o projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Como Começar a Usar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ao clonar o repositorio ou gerar um fork do mesmo utilise o comando 'yarn' ou 'npm install' para baixar as dependencias e em seguida utilize o comando 'yarn start' para executar o projeto. Abaixo estão os comandos prontos para copiar e colar no terminal.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Clone o projeto
 
-### `yarn eject`
+```cmd
+git clone https://github.com/jfelipesouza/React-Christima-App.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Baixe as dependencias e inicie o projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  yarn && yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ou
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+  npm install && npm start
+```
 
-## Learn More
+## Planos Futuros
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Pretendo desenvolver este projeto com a criação de novas funcionalidades e correção de suas falhas. Os próximos passos a serem tomados neste projeto são:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Melhorar a UI com um tema claro melhor que não agrida visualmente o usuario;
+- Gerador de cartão de natal;
+- Exportar cartão de natal gerado em pdf ou em algum formato de imagem;
+
+## Agradecimento
+
+<p aling='justify'>
+Este projeto foi bem divertido de produzir, peguei a UI de uma pessoa desconhecia na internet. Obrigado por ter lido até aqui, aproveite o site e não se acanhem em clona-lo e melhora-lo(só me mostra depois).
+Toda contribuição é sempre bem-vinda :grin:.
+</p>
