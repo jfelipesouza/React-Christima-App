@@ -55,6 +55,47 @@ const GlobalStyle = createGlobalStyle`
     user-select: none;
   }
 
+  h1{
+
+    @media screen and (max-width:760px) {
+      margin-top: 3rem;
+      width: 100vw;
+      text-align: center;
+      font-size: ${({theme})=>theme.resposiveSizes.h1};
+
+    }
+
+    @media screen and (max-width:424px) {   
+      font-size: ${({theme})=>theme.resposiveSizes.big};
+      color: grey;
+    }
+
+  }
+
+  h2{
+    @media screen and (max-width:760px){
+      font-size: ${({theme})=>theme.resposiveSizes.h1};
+
+    }
+
+    @media screen and (max-width:424px) {   
+      font-size: ${({theme})=>theme.resposiveSizes.h2};
+
+    }
+  }
+
+  p{
+      @media screen and (max-width:760px){
+        font-size: ${({theme})=>theme.resposiveSizes.normal};
+
+      }
+
+      @media screen and (max-width:424px) {   
+        font-size: ${({theme})=>theme.resposiveSizes.small};
+
+      }
+  }
+
 `;
 
 export default GlobalStyle;

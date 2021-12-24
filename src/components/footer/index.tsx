@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
       </FooterContainerTop>
 
       <FooterCopyContainer>
-        <FooterDescrition>	&copy;Copy-Felipe Souza 2021</FooterDescrition>
+        <FooterDescrition>	&copy; Felipe Souza 2021</FooterDescrition>
       </FooterCopyContainer>
     </FooterContainer>
   );

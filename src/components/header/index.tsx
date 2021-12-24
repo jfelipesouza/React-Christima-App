@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 import { FaRegSun, FaMoon } from "react-icons/fa";
 import { Context } from "../../services/context";
 import {
@@ -10,11 +11,12 @@ import {
   Links,
   Logo,
   IconContainer,
+  HeaderMenu,
+  HeaderIconsContainer,
 } from "./styled";
 
 const Header: React.FC = () => {
-  const { isDark, setDark } = useContext(Context);
-
+  const { isDark, setDark,open,setOpen } = useContext(Context);
   return (
     <Container>
       <HeaderNavbar>
@@ -44,11 +46,22 @@ const Header: React.FC = () => {
             <Links href="#contact">Mande Mensagens</Links>
           </LinksItem>
         </HeaderLinks>
-
-        <IconContainer onClick={() => setDark(!isDark)}>
-          {isDark ? <FaRegSun /> : <FaMoon />}
-        </IconContainer>
         
+        <HeaderIconsContainer >
+          <IconContainer onClick={() => setDark(!isDark)}>
+            {isDark ? <FaRegSun /> : <FaMoon />}
+          </IconContainer>
+          
+          <HeaderMenu>
+
+            <IconContainer onClick={()=>setOpen(!open)}>
+              <AiOutlineMenu/>
+            </IconContainer>
+            
+
+          </HeaderMenu>
+
+        </HeaderIconsContainer>
       </HeaderNavbar>
     </Container>
   );

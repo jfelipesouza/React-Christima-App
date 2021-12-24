@@ -22,7 +22,7 @@ export const GiftCardContainer = styled.div`
     transform: scale(1.1);
   }
 
-`;
+`; 
 
 export const Image = styled.img`
   width: 5rem;
@@ -58,7 +58,7 @@ export const GiftCardIcon = styled.div`
   color:red;
   font-size: 1.5rem;
   position: absolute;
-  top: 0;
+  top: 0.5rem;
   right: 0.5rem;
 `;
 

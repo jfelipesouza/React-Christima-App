@@ -65,13 +65,9 @@ export const HeroSectionTitle = styled.h1`
   text-align: center;
   width: 80%;
 
-  @media screen and (max-width:760px) {
-    margin-top: 3rem;
-    width: 100vw;
-    text-align: center;
-    font-size: ${({theme})=>theme.resposiveSizes.h1};
+  
 
-  }
+
 `;
 
 export const HeroSectionDescrition = styled.p`
@@ -82,10 +78,8 @@ export const HeroSectionDescrition = styled.p`
   text-align: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  @media screen and (max-width:760px){
-    font-size: ${({theme})=>theme.resposiveSizes.normal};
+  
 
-  }
 
 
 `;
@@ -106,10 +100,8 @@ export const HeroSectionSubTitle = styled.h2`
   text-align: center;
   margin-bottom: 4rem;
 
-  @media screen and (max-width:760px){
-    font-size: ${({theme})=>theme.resposiveSizes.h1};
+  
 
-  }
 
 `
 
@@ -122,6 +114,16 @@ export const HeroSectionWhrapper = styled.div`
   grid-gap: 1.5rem;
   padding: 0 3.125rem;
   overflow-y: hidden;
+
+  @media screen and (max-width:800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 570px) {
+    
+    grid-template-columns: 1fr ;    
+
+  }
 `;
 
 export const HeroButton = styled.a`

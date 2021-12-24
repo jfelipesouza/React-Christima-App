@@ -8,6 +8,11 @@ export const ContactContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width:780px) {
+    margin: 4rem 0 ;
+  }
+  
 `;
 
 export const ContactContent = styled.div`
@@ -20,6 +25,21 @@ export const ContactContent = styled.div`
   box-shadow: 2px 2px 13px 3px rgba(0,0,0,0.28);
   border-radius: 2rem;
   padding: 1rem 3rem;
+
+  @media screen and (max-width:400px) {
+    padding: 1rem 1rem;
+  }
+  
+
+  @media screen and (max-width:780px) {
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (max-width: 570px) {
+    width: 90%;
+    grid-template-columns: 1fr ;
+
+  }
 `;
 
 export const LeftContainer= styled.div`
@@ -29,6 +49,11 @@ export const LeftContainer= styled.div`
   justify-content: center;
   width: 50%;
 
+  @media screen and (max-width:780px) {
+    width: 100%; 
+    margin-top: 2rem;
+  }
+
 `;
 
 export const ContactTitle = styled.h2`
@@ -36,6 +61,11 @@ export const ContactTitle = styled.h2`
   font-size: ${({theme})=>theme.sizes.h2};
   margin-bottom: 1.5rem;
   user-select:none;
+
+  @media screen and (max-width:780px) {
+    text-align:center; 
+  }
+
 `;
 export const ContactMessage = styled.textarea`
   min-height: 10rem;
@@ -48,6 +78,12 @@ export const ContactMessage = styled.textarea`
   color: ${({theme})=>theme.colors.titleColor};
   background-color: ${({theme})=>theme.colors.background};
   text-transform: initial;
+
+  @media screen and (max-width:400px) {
+    max-width: 100%;
+    min-width: 100%;
+    
+  }
 `;
 
 export const ContactButton = styled.div`
@@ -74,11 +110,21 @@ export const RigthContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 60%;
+  
+  @media screen and (max-width:400px) {
+    width: 100%; 
+  }
+  
 `;
 
 
 export const ContactImage = styled.img`
   width: 100%;
   height: auto;
+  
+  @media screen and (max-width:780px) {
+    width: 100%; 
+  }
+  
 `;
