@@ -9,7 +9,7 @@ export const Container = styled.div<SidebarContainerProps>`
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 50%;
+  min-height: 50%;
   background-color: ${(props) => props.theme.colors.containerBackground};
   display: grid;
   align-items: center;
@@ -44,6 +44,7 @@ export const SidebarMenu = styled.ul`
   grid-template-columns: 1fr;
   text-align: center;
   grid-row-gap: 2rem;
+
   @media screen and (max-width: 480px) {
     grid-row-gap: 1rem;
   }
